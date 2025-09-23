@@ -1,14 +1,49 @@
+@font-face{
+    font-family: Eightgon;
+    src: url("fonts/eightgon-font/Eightgon-OGn6p.ttf");
+}
+
 #nav{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Eightgon;
 }
 
 #nav a{
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 50px;
     border-radius: 25px;
 }
 
+body{
+    background-color: rgb(24, 22, 24);
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}

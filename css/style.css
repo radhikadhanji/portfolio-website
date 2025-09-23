@@ -1,0 +1,14 @@
+#nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+}
+

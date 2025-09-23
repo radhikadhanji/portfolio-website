@@ -68,7 +68,10 @@ p{
     color: white; 
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: flex;
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
+    margin: 50px 200px;
+    line-height: 1.5;
 }

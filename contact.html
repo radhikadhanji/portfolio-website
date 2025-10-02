@@ -23,6 +23,33 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
         <h1>Contact Me</h1>
-        
+        <a href="https://github.com/radhikadhanji">Github</a>
+        <a href="https://www.linkedin.com/in/radhika-dhanji-52b3b832b/">Linkedin</a>
+        <a href="https://tryhackme.com/p/radhikadhanji0517">TryHackMe</a>
+        <p>Email me at radhikadhanji0517@gmail.com, or alternatively use the form below.</p>
+
+        <div id="form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <h3>Contact Form</h3>
+                    <input type="hidden" name="access_key" value="de8a7c05-1d41-4d5a-92c3-0044e9c3bb31">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="username" required/>
+                    </p>
+                    <p>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="email" name="email" required/>
+                    </p>
+                    <p>
+                        <label for="msg">Your Message:</label>
+                        <textarea id="msg" name="message" required>Write your message here...</textarea>
+                    </p>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="/index.html">
+
+                    <button id ="submit-button" type="submit">Confirm</button>
+                </form>
+            </div>
+
        
     </body>

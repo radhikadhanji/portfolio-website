@@ -8,6 +8,20 @@
   font-style: normal;
 }
 
+/*Slowfade animation - slowly fade in website content on page load */
+@keyframes slowfade {
+    0% {
+      transform: translateY(1%);
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
  
 #nav{
     list-style-type: none;
@@ -29,6 +43,7 @@
 
 body{
     background-color: rgb(24, 22, 24);
+    animation: slowfade 1s ease-out forwards;
 }
 
 a:link {
@@ -100,4 +115,165 @@ a{
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
     margin: 10px;
+}
+
+/*Used for the contact me button */
+  button{
+    color: #ffffff;
+    font-family: Eightgon;
+    font-size: 40px;
+    border-radius: 25px;
+    background-color: #4a6db1;
+    padding: 10px 20px;
+    cursor:pointer;
+    border: 5px solid #dfeaf9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*Styling the Contact Me form */
+
+  form{
+    position: relative;
+    margin: 100px;
+    border: 2px solid #ffffff;
+  }
+
+  /*Styling the contact me textarea */ 
+  input, textarea{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    text-align: center;
+  }
+
+  h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: Eightgon;
+    font-size: 25px;
+  }
+
+  input:focus, textarea:focus{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #83cfe4;
+  }
+
+  textarea{
+    padding: 13px;
+    color: #5b5555;
+  }
+
+/* Blog elements - styling the blog aside and blog posts */ 
+.blogaside{
+  float: left;
+  margin-left: 10px;
+  width: 26%;
+  border-radius: 10px;
+  border: 2px solid #4a6db1;
+  background-color: #dfeaf9;
+  text-align: center;
+  position: sticky;
+  top: 50px;
+}
+
+.blogpost{
+  float: right;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid #4a6db1;
+  background-color: #dfeaf9;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+/* Compress blog text initially to 3.5lh */
+.blogtext{
+  height: 3.5lh;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  transition: height 0.5s;
+}
+/* Below is the code to create the read more button */
+input[type="checkbox"]{
+  bottom: 0;
+  clip: rect(0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  appearance: hidden;
+  -webkit-appearance: none;
+}
+
+input[type="checkbox"]:not(:checked) ~ label::after{
+  content: "Read More";
+}
+
+input[type="checkbox"]:checked ~ label::after{
+  content: "Read Less";
+}
+/* Unravel the blog post to full height */
+input[type="checkbox"]:checked ~ .blogtext{
+  line-clamp: unset;
+  -webkit-line-clamp: unset;
+  height: auto;
+}
+
+label{
+  cursor: pointer;
+  font-family: Eightgon;
+  color: #4a6db1;
+  margin-top: 1lh;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style each individual filter background */
+.filter{
+  width: 25%;
+  font-size: 20px;
+  border: 2px solid #19395a;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Space Grotesk", sans-serif;
+  color: #19395a;
+  cursor: pointer;
+}
+
+.filter.quiz{
+  background-color: #e1baba;
+}
+
+.filter.design{
+  background-color: #c1e2a6;
+}
+
+.filter.coding{
+  background-color: #a2d7e0;
+}
+
+.filter.misc{
+  background-color: #d9a2e7;
 }

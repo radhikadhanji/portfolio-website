@@ -175,9 +175,8 @@ a{
   float: left;
   margin-left: 10px;
   width: 26%;
-  border-radius: 10px;
-  border: 2px solid #4a6db1;
-  background-color: #dfeaf9;
+  border: 2px solid #ffffff;
+  background-color: #58425b;
   text-align: center;
   position: sticky;
   top: 50px;
@@ -186,9 +185,8 @@ a{
 .blogpost{
   float: right;
   width: 70%;
-  border-radius: 10px;
-  border: 2px solid #4a6db1;
-  background-color: #dfeaf9;
+  border: 2px solid #ffffff;
+  background-color: #58425b;
   text-align: center;
   margin-bottom: 20px;
   margin-right: 10px;
@@ -214,8 +212,6 @@ input[type="checkbox"]{
   overflow: hidden;
   padding: 0;
   position: absolute;
-  appearance: hidden;
-  -webkit-appearance: none;
 }
 
 input[type="checkbox"]:not(:checked) ~ label::after{
@@ -235,7 +231,7 @@ input[type="checkbox"]:checked ~ .blogtext{
 label{
   cursor: pointer;
   font-family: Eightgon;
-  color: #4a6db1;
+  color: #000000;
   margin-top: 1lh;
   display: inline-block;
   font-size: 20px;
@@ -248,17 +244,16 @@ label{
 }
 
 /* Style each individual filter background */
-.filter{
+.filter b{
   width: 25%;
   font-size: 20px;
-  border: 2px solid #19395a;
   border-radius: 10px;
   margin: 5px;
   padding: 2px;
   text-align: center;
   display: inline-block;
   font-family: "Space Grotesk", sans-serif;
-  color: #19395a;
+  color: #000000;
   cursor: pointer;
 }
 

@@ -13,7 +13,7 @@
 h1{
     color: #4a6db1;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 80px;
     font-family: Eightgon;
 }
 
@@ -21,14 +21,14 @@ h3{
     color: #4a6db1;
     font-weight: bold;
     font-size: 30px;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: Eightgon;
 }
 
 h4{
     color: #4a6db1;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: Eightgon;
 }
 
 /* Body text (as well as links, list items, etc */
@@ -37,18 +37,18 @@ p{
     font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 a{
-  font-family: 'Bai Jamjuree', serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 li{
     color: #4a6db1;
     font-weight: bold;
     font-size: 22px;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: "Space Grotesk", sans-serif;
     line-height: 1.8;
 }
 
@@ -76,7 +76,7 @@ body{
 /*Used for the contact me button */
   button{
     color: #ffffff;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: Eightgon;
     font-size: 40px;
     border-radius: 25px;
     background-color: #4a6db1;
@@ -97,7 +97,7 @@ body{
 
   /*Styling the contact me textarea */ 
   input, textarea{
-    font-family: 'Bai Jamjuree', serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 15px;
     width: 300px;
     height: 50px;
@@ -122,7 +122,7 @@ body{
   table, th, td{
     color: #4a6db1;
     font-size: 16px;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: "Space Grotesk", sans-serif;
     border-collapse: collapse;
     padding: 10px;
     border: 2px solid navy;
@@ -132,7 +132,7 @@ body{
 
   footer{
     list-style-type: none;
-    font-family: 'Bai Jamjuree', serif;
+    font-family: "Space Grotesk", sans-serif;
     padding: 20px;
     border-radius: 25px 25px 0px 0px;
     background-color: #4a6db1;
@@ -227,6 +227,7 @@ body{
 
 /* Compress blog text initially to 3.5lh */
 .blogtext{
+  font-family: "Space Grotesk", sans-serif;
   height: 3.5lh;
   overflow: hidden;
   display: -webkit-box;
@@ -263,7 +264,7 @@ input[type="checkbox"]:checked ~ .blogtext{
 
 label{
   cursor: pointer;
-  font-family: 'Bai Jamjuree', serif;
+  font-family: "Space Grotesk", sans-serif;
   color: #4a6db1;
   margin-top: 1lh;
   display: inline-block;
@@ -285,7 +286,7 @@ label{
   padding: 2px;
   text-align: center;
   display: inline-block;
-  font-family: 'Bai Jamjuree', serif;
+  font-family: Eightgon;
   color: #19395a;
   cursor: pointer;
 }
@@ -304,77 +305,6 @@ label{
 
 .filter.misc{
   background-color: #d9a2e7;
-}
-
-/* Styling the tech icons and tool tip text */
-.tech{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  position: relative;
-}
-
-.tech .tooltiptext{
-  visibility: hidden;
-  width: 120px;
-  background-color: #4a6db1;
-  font-family: 'Bai Jamjuree', serif;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tech .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tech img{
-  justify-content: center;
-  display: block;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-}
-
-.tech img:hover{
-  background-color: #dfeaf9;
-  border: 2px solid #4a6db1;
-  border-radius: 25px;
-}
-
-.tech:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Styling bold areas of the research report */
-.question{
-  background-color: #4a6db1;
-  padding: 10px;
-  margin: 50px;
-  border-radius: 25px;
-}
-.question h3{
-  color: white;
 }
 
 /* CSS media queries for mobile. */

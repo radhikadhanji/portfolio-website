@@ -148,11 +148,10 @@ body{
   /*Contentbox, for general content that needs to stand out slightly */
 #contentbox{
         border: 3px solid #4a6db1;
-        border-radius: 25px;
         margin: 0px;
         background-color: #dfeaf9;
         text-align: center;
-        margin: 20px 20px 20px 20px;
+        margin: 50px 50px 50px 50px;
 }
  /* Styling the navigation bar */
 #navigation{
@@ -207,12 +206,12 @@ body{
     font-size: 15px;
 }
 
+
 /* Blog elements - styling the blog aside and blog posts */ 
 .blogaside{
   float: left;
   margin-left: 10px;
   width: 26%;
-  border-radius: 10px;
   border: 2px solid #4a6db1;
   background-color: #dfeaf9;
   text-align: center;
@@ -223,7 +222,6 @@ body{
 .blogpost{
   float: right;
   width: 70%;
-  border-radius: 10px;
   border: 2px solid #4a6db1;
   background-color: #dfeaf9;
   text-align: center;
@@ -339,7 +337,6 @@ label{
     margin-top: 0px;
     margin-bottom: 20px;
     width: 96%;
-    border-radius: 10px;
     border: 2px solid #4a6db1;
     background-color: #dfeaf9;
     text-align: center;

@@ -15,7 +15,7 @@ const articleData = [
               <p>I have recently been interested in exploring the implementation of servlets in Java projects - though I could simply use Apache Tomcat to deploy a servlet application, I would like to refresh my knowledge of AWS by deploying a servlet application with AWS. </p>
               <p>In terms of projects which are already in progress, I am continuing to develop Frill, a web-forum where students can discuss graduate programs and the recruitment process. </p>
               <p>I have also recently continued development on my Python-based search engine. I have decided to migrate the database gradually to Supabase as the data my web crawler connects has grown too big to host on GitHub. </p>
-              <p>Going forward, I hope this blog continues to serve as an effective documentation process for my learning and development. </p>
+              <p>Going forward, I hope this blog continues to serve as an effective documentation process for my learning and development. My next step for this website will be to improve the descriptions and add more projects to my projects page.</p>
             </div>
         <label for="read-more-1"></label>
      </div>

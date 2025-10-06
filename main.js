@@ -4,16 +4,18 @@ const articleData = [
         id: 1,
         title: "Quiz 1",
         date: "17 January, 2025",
-        category: ["quiz", "misc"],
+        category: ["projects", "misc"],
         content: `<div class="blogpost" id="quiz1">
-            <div class="filter quiz"><b>Quizzes</b></div> <div class="filter misc"><b>Misc.</b></div>
-            <h4>17 January, 2025</h4>
-            <h3>Quiz 1: Folder Setup</h3>
+            <div class="filter projects"><b>Projects</b></div> <div class="filter misc"><b>Misc.</b></div>
+            <h4>6 October 2025</h4>
+            <h3>First Blog!</h3>
             <input type="checkbox" name="read-more" id="read-more-1">
             <div class="blogtext">
-              <p>I created a folder with the following content inside it: a blog page, a main page, a CSS folder for my style.css file, an empty images folder, and a scripts.js file.</p>
-              <p>I have created a CSS folder as I may have differing CSS on different pages of my website and need somewehere to store it all. Additionally, my images folder will likely have some subfolders in the future if there are any sections that need a lot of images.</p>
-              <img src="images/quizzes/quiz1.png" alt="Setup of my basic website files and folders">
+              <p>This is my first blog post on my new portfolio website. While this mainly serves as a test article, I also want to highlight some projects I have been working on at the conception of this website.</p>
+              <p>I have recently been interested in exploring the implementation of servlets in Java projects - though I could simply use Apache Tomcat to deploy a servlet application, I would like to refresh my knowledge of AWS by deploying a servlet application with AWS. </p>
+              <p>In terms of projects which are already in progress, I am continuing to develop Frill, a web-forum where students can discuss graduate programs and the recruitment process. </p>
+              <p>I have also recently continued development on my Python-based search engine. I have decided to migrate the database gradually to Supabase as the data my web crawler connects has grown too big to host on GitHub. </p>
+              <p>Going forward, I hope this blog continues to serve as an effective documentation process for my learning and development. </p>
             </div>
         <label for="read-more-1"></label>
      </div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src= "https://unpkg.com/jquery.terminal@2.45.2/js/jquery.terminal.min.js"> </script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal@2.45.2/css/jquery.terminal.min.css" />
+</head>
+<style type="text/css">
+.terminal,span,.cmd,div { 
+    --color: rgba(0, 128, 0, 0.99);
+}
+.terminal, span {
+    --size: 1.4;
+}
+</style>
+<body>
+    <template id="greetings">
+        o          `O        o                            
+O           o       O                             
+o           O       o                             
+O           O       O                             
+o     o     o .oOo. o  .oOo  .oOo. `oOOoOO. .oOo. 
+O     O     O OooO' O  O     O   o  O  o  o OooO' 
+`o   O o   O' O     o  o     o   O  o  O  O O     
+ `OoO' `OoO'  `OoO' Oo `OoO' `OoO'  O  o  o `OoO' 
+                                                  
+                                                  
+    </template>
+
+<script>
+$('body').terminal({
+    iam: function (name) {
+        this.echo('Hello, ' + name 
+        + '. Welcome to GeeksForGeeks');
+    },
+    founder: function () {
+        this.echo('Sandeep Jain');
+    },
+    help: function () {
+        this.echo('return - Return to the main website.' +
+            '\nabout - Hear a little more about me.' +
+            '\ncontact - Find out how to contact me.' +
+            '\nprojects - Hear about some of my projects.' +
+            '\n'
+        );
+    },
+}, {
+    greetings: greetings.innerHTML + 'Welcome to the terminal in my portfolio website!\n'
+    + 'This terminal was an experiment in using JQuery Terminal to program and style the commands.\n'
+    + 'Type help for a full set of commands, and type return to return to my portfolio website.'
+});
+</script>
+</body>
+</html>

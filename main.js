@@ -2,10 +2,10 @@
 const articleData = [
     {
         id: 1,
-        title: "Quiz 1",
+        title: "Blog 1",
         date: "17 January, 2025",
         category: ["projects", "misc"],
-        content: `<div class="blogpost" id="quiz1">
+        content: `<div class="blogpost" id="blog1">
             <div class="filter projects"><b>Projects</b></div> <div class="filter misc"><b>Misc.</b></div>
             <h4>6 October 2025</h4>
             <h3>First Blog!</h3>

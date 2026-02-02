@@ -341,7 +341,6 @@ label{
   width: 28%;
   height: 200px;
   font-family: "Space Grotesk", sans-serif;
-  width: 100%;
   margin-right: 10px;
   background: #4a6db1;
 }
@@ -353,7 +352,6 @@ label{
 
 .gallery-cell:before {
   display: block;
-  color: white;
 }
 
 /* CSS media queries for mobile. */

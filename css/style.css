@@ -339,7 +339,7 @@ label{
 
 .gallery-cell {
   font-family: "Space Grotesk", sans-serif;
-  width: 60%;
+  width: 100%;
   margin-right: 10px;
   background: #4a6db1;
 }
@@ -351,8 +351,6 @@ label{
 
 .gallery-cell:before {
   display: block;
-  line-height: 200px;
-  font-size: 80px;
   color: white;
 }
 

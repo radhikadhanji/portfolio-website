@@ -10,10 +10,12 @@
         <meta name="author" content="Radhika Dhanji">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/flickity.css" media="screen">
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <script src="flickity.pkgd.min.js"></script>
         <ul id = "navigation">
             <li> <a href="index.html">home </a> </li>
             <li> <a href="about.html"> about </a> </li>
@@ -22,27 +24,13 @@
             <li> <a href="contact.html"> contact </a></li>
         </ul>
         <h1>Projects</h1>
-        <div id="contentbox">
-            <div class="container">
-            <h3>Frill</h3>
-            <p>A classic web-forum built with PHP and SQL for students to discuss graduate programs. Currently in development.</p>
-        </div>
-        <div class="container">
-            <h3>Blissdraw</h3>
-            <p>A small web drawing application intended as a beginner Typescript project. Check out the <a href=" https://github.com/radhikadhanji/blissdraw">live demo</a> on Github.</p>
-        </div>
-        <div class="container">
-            <h3>Cozy Spring Game Jam 2024</h3>
-            <p>Together in a development team of 6, we created Cozy Potion Evolution as an entry to the Cozy Spring Game Jam 2024, made in Godot. Check out the <a href="https://boopenthusiast.itch.io/cozy-potion-evolution">game</a> and the associated <a href="https://github.com/BoopEnthusiast/Cozy-Spring-Jam-2024">repository.</a></p>
-        </div>
-        <div class="container">
-            <h3>IXXN221 Website</h3>
-            <p>A website created during the class IXXN221 with pure HTML, CSS and JS. This features a blog with a tagging and filtration system and a form request system. This current website is a refined version of my IXXN221 website, featuring more modular implementations of certain features. Check out the <a href="https://github.com/radhikadhanji/ixxn221-website/tree/main">repository.</a></p>
-        </div>
-        <div class="container">
-            <h3>Music Visualiser</h3>
-            <p>A music visualiser created with P5.js for the class DSDN142. Check out the  <a href="https://github.com/23-2-DSDN142/the-music-visualizer-radhikadhanji?tab=readme-ov-file"> repository.</a></p>
-        </div>
+        <div class="gallery js-flickity">
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
+            <div class="gallery-cell"></div>
         </div>
          <footer>
                 Made by Radhika Dhanji, © 2026

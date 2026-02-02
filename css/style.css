@@ -338,11 +338,13 @@ label{
 }
 
 .gallery-cell {
-  width: 38%;
-  height: 300px;
+  width: 48%;
+  height: 400px;
   font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
   margin-right: 10px;
-  background: #4a6db1;
+  background: lightblue;
+  color: white;
 }
 
 .gallery-cell.is-selected {
@@ -352,6 +354,7 @@ label{
 
 .gallery-cell:before {
   display: block;
+  color: white;
 }
 
 /* CSS media queries for mobile. */

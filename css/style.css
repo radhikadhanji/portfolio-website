@@ -332,11 +332,14 @@ label{
 }
 
 /* Style projects gallery */
+
+
 .gallery{
   background: #EEE;
 }
 
 .gallery-cell {
+  font-family: "Space Grotesk", sans-serif;
   width: 28%;
   height: 200px;
   margin-right: 10px;
@@ -355,6 +358,10 @@ label{
   line-height: 200px;
   font-size: 80px;
   color: white;
+}
+
+.gallery-cell:after{
+  margin: 10px;
 }
 
 /* CSS media queries for mobile. */

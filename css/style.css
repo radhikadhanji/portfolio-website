@@ -338,7 +338,7 @@ label{
 }
 
 .gallery-cell {
-  height: 50%;
+  width: 100%;
   font-family: "Space Grotesk", sans-serif;
   margin-right: 10px;
   background: #4a6db1;

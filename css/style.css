@@ -334,7 +334,7 @@ label{
 /* Style projects gallery */
 
 .gallery{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .gallery-cell {
@@ -342,7 +342,7 @@ label{
   width: 28%;
   height: 200px;
   margin-right: 10px;
-  background: navy;
+  background: #4a6db1;
   counter-increment: gallery-cell;
 }
 

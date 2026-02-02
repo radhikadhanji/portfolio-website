@@ -339,21 +339,19 @@ label{
 
 .gallery-cell {
   font-family: "Space Grotesk", sans-serif;
-  width: 28%;
-  height: 200px;
+  width: 60%;
+  height: 40%;
   margin-right: 10px;
   background: #4a6db1;
-  counter-increment: gallery-cell;
 }
 
 .gallery-cell.is-selected {
   background: lightblue;
+  color: #4a6db1;
 }
 
 .gallery-cell:before {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
   line-height: 200px;
   font-size: 80px;
   color: white;

@@ -1,6 +1,36 @@
 /*Defining the data for each article */
 const articleData = [
     {
+        id: 3,
+        title: "escdle Part 1: The Concept",
+        date: "9 February, 2026",
+        category: ["projects", "coding"],
+        content: `<div class="blogpost" id="blog3">
+        <div class="filter projects"><b>Projects</b></div> <div class="filter coding"><b>Coding</b></div>
+        <h4>9 February 2026</h4>
+        <h3>escdle Part 1: The Concept </h3>
+        <input type="checkbox" name="read-more" id="read-more-3">
+        <div class="blogtext">
+        <p>The main surge of popularity for Wordle-style games may have receded for now, but the daily guessing game format is still very much prevalent today. One of these games that has stuck with me the most is Heardle, a game where you have to guess the correct song based on a snippet of the song, which gets progressively longer after more incorrect guesses. I decided one day that I wanted to combine my interest in Eurovision (how someone with zero connection to Europe whatsoever came to like Eurovision is another story entirely) with my interest in Heardle to create a Heardle-style game specifically for Eurovision songs, and that was how escdle was born.</p>
+        <p>So there I was, with an idea. It’s great to have an idea, but not so great when you aren’t sure where to start. Thankfully, I had already dabbled in React before, so I figured I would keep things simple and start with the basic React template.</p>
+        <p>And then I thought, wouldn’t it be interesting if I tried something new for this project?</p>
+        <p>There were, of course, more options given in the command line for different tools that could be used with React. I decided to opt for TypeScript since I had used this in my Blissdraw project before (albeit I was a little rusty), Next.js, and Tailwind CSS to accompany my tech stack. I hadn’t used the latter two before - and I had only heard of them in passing - but I figured I needed to branch out and learn some more web development frameworks, so what better way to do that than learn through a new project?</p>
+        <p>Initially, the game only had two components: the game and the music player. Later, I added an information modal to display update logs and additional instructions about the game (<a href="https://www.youtube.com/watch?v=nwJK-jo91vA">this tutorial</a> was extremely helpful in figuring out how to make the modal). Some immediate observations I had:</p>
+        <ul>
+        <li>Tailwind CSS was extremely helpful in making a clean interface, and once I understood how to add styling through className, it ended up being very easy to use. Of course, my CSS wasn’t very complicated, so I’m sure it would have been harder to use if I had more to work with.</li>
+        <li>I initally didn’t understand how seperating sections of my project into components worked, but once I did, I realised it was much cleaner than using raw HTML - no longer was I getting confused about what piece of JavaScript pertained to which section of my project. The useState hook was easy to understand when I thought of it similar to a getter and setter from Java, but useEffect took a little longer to understand. From my research, I’ve also seen that using too many useEffect hooks slows down performance, so I want to try optimising my code to use less of these in the future, excluding where it’s necessary. Reading <a href="https://react.dev/learn/you-might-not-need-an-effect"> this article  </a> helped give me a new perspective on useEffect!</li>
+        <li>I like making data structures. Making the song data structure was fun! Although adding aspects such as the year the song was made and the country the song was representing did add more space, I felt it was important to include in the context of Eurovision songs. </li>
+        </ul>
+        <p>So far, I was hosting all my song clips as .mp3 files locally in the public folder, but I knew it wasn’t scalable (only 16 songs and I was already getting warnings on GitHub!) so I started researching other ways of retrieving songs. Thankfully, the SoundCloud API exists! This will be documented in the next blog post. </p>
+        <p>After getting the base functionality of the game in (getting a random song, clicking the play button to play a song, being able to guess, getting results for incorrect and correct guesses and the song increasing in length with each incorrect guess, and the daily timer), the game was finally ready to play!</p>
+        <p>…until I realised I had used up all my Netlify credits from enabling automatic deploys on my personal website while testing and all my projects were deactivated. Lesson learned: turn off automatic deploys and don’t commit while you’re still testing something. </p>
+        <p>After spending 9 dollars on the Personal plan and configuring all my deploy settings properly, escdle was now ready to actually play! Despite already knowing what songs would appear, I actually had a lot of fun playing around with it, and I was satisfied with how it turned out for the time being, considering all that I had learned (although the game didn’t stay in it’s initial state for very long). </p>
+        <p>The next blog post will document the addition of endless mode, switching to SoundCloud for song clips, and adding daily guessing statistics!</p>
+        </div>
+        <label for="read-more-3"></label>
+        </div>`,
+    },
+    {
         id: 2,
         title: "Plans for the Future (INDN332)",
         date: "7 October, 2025",
